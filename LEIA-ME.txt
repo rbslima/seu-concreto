@@ -1,0 +1,22 @@
+# Seu Concreto — projeto Android
+
+Este projeto empacota o HTML existente usando Capacitor e gera um APK Android de teste pelo GitHub Actions.
+
+## Como gerar o APK usando somente o iPhone
+
+1. Extraia este ZIP no iPhone (app Arquivos).
+2. Crie um repositório no GitHub pelo Safari: https://github.com/new
+3. No repositório, use **Add file > Upload files** e envie os arquivos e pastas deste projeto. É necessário preservar a pasta `.github/workflows`.
+4. Faça o commit na branch `main`.
+5. Abra a aba **Actions** do repositório.
+6. Se solicitado, habilite GitHub Actions. Abra o fluxo **Gerar APK Android** e toque em **Run workflow** (ou aguarde o fluxo iniciado pelo commit).
+7. Quando terminar com sucesso, abra a execução e baixe o artefato **seu-concreto-apk**.
+8. O ZIP baixado contém `app-debug.apk`. Transfira-o para um aparelho Android e instale-o. O Android poderá pedir autorização para instalar apps dessa origem.
+
+## Observações
+
+- O APK gerado é uma versão de teste (debug), adequada para instalação direta e testes; não é uma versão assinada para publicação na Google Play.
+- O app funciona offline porque o HTML fica empacotado dentro do aplicativo.
+- Identificador Android: `br.com.seuconcreto.app`.
+- Para publicar na Play Store, será necessário configurar assinatura de release e cumprir os requisitos atuais da loja.
+- O processo de build acontece nos servidores do GitHub; não exige computador local.

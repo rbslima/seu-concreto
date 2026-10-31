@@ -1,0 +1,6 @@
+{
+  "appId": "br.com.seuconcreto.app",
+  "appName": "Seu Concreto",
+  "webDir": "www",
+  "bundledWebRuntime": false
+}
